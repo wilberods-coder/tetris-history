@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="От «Электроники-60» до мировых чемпионатов. Интерактивная история Tetris: люди, открытия и семь фигур, которые покорили мир.">
+  <meta property="og:title" content="Tetris. История одной легенды">
+  <meta property="og:description" content="Семь фигур. Бесконечные возможности. Путешествие по истории культовой игры с 1984 года.">
+  <meta property="og:type" content="website">
+  <title>Tetris. История одной легенды</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/tetromino-bg.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header" id="site-header">
+    <nav class="nav wrap" aria-label="Основная навигация">
+      <a class="brand" href="#hero" aria-label="Tetris — в начало"><img src="assets/favicon.svg" alt="" width="23" height="23"> <span>Tetris<span class="brand-light"> / история</span></span></a>
+      <div class="nav-links"><a href="#birth">Начало</a><a href="#gameboy">Прорыв</a><a href="#today">Сегодня</a><a class="nav-pill" href="#timeline">Хронология <span aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <canvas id="tetromino-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="tiny-block" aria-hidden="true"></span> С 1984 ГОДА. НАВСЕГДА.</p>
+        <h1 id="hero-title">Tetris.<br><span>История одной легенды.</span></h1>
+        <p class="hero-description">Семь фигур. Бесконечные возможности.<br>Игра, которая объединила мир.</p>
+        <a class="button" href="#birth">Узнать больше <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" id="hero-art"><img src="assets/tetromino-sculpture.svg" alt="Семь разноцветных объёмных тетромино парят над белой поверхностью" width="1100" height="330" fetchpriority="high"></div>
+      <div class="hero-bottom wrap"><span>ОДНА ИДЕЯ. ЦЕЛАЯ ЭПОХА.</span><a href="#birth" aria-label="Прокрутить к первой главе">Листайте историю <span aria-hidden="true">↓</span></a><span>1984 — СЕГОДНЯ</span></div>
+    </section>
+
+    <section class="chapter gray" id="birth" aria-labelledby="birth-title">
+      <div class="wrap">
+        <div class="chapter-top reveal"><span class="eyebrow"><i class="dot purple"></i> 01 / РОЖДЕНИЕ</span><span class="era">1984</span></div>
+        <div class="split">
+          <div class="chapter-copy reveal"><h2 id="birth-title">Большие идеи.<br><span class="muted">Четыре квадрата.</span></h2><p>Москва. Вычислительный центр Академии наук СССР. Алексей Пажитнов экспериментирует с головоломками на «Электронике-60» — и придумывает игру, в которой фигуры падают, а заполненные линии исчезают.</p><p>Вдохновение — настольное пентамино. Пять квадратов превращаются в четыре. Из простого ограничения рождается удивительно глубокая игра.</p><a class="text-link" href="https://tetris.com/news/the-history-of-tetris" target="_blank" rel="noopener noreferrer">Официальная история <span aria-hidden="true">↗</span></a></div>
+          <figure class="exhibit reveal"><img src="assets/electronika.svg" alt="Авторская иллюстрация терминала: зелёные фигуры из скобок на чёрном экране" width="640" height="490" loading="lazy"><figcaption><span>ЭЛЕКТРОНИКА-60</span> 01 / Иллюстрация терминала</figcaption></figure>
+        </div>
+        <aside class="callout reveal"><span class="callout-mark" aria-hidden="true">[ ]</span><div><h3>До первого пикселя.</h3><p>У «Электроники-60» не было графического дисплея: Пажитнов изображал квадраты текстовыми символами. Чтобы увлечь, игре хватило скобок. <a href="https://time.com/2837390/tetris-at-30-pajitnov-interview/" target="_blank" rel="noopener noreferrer" aria-label="Источник: интервью Алексея Пажитнова журналу Time">[1]</a></p></div></aside>
+        <div class="people reveal"><h3>Люди у истоков</h3><div><strong>Алексей Пажитнов</strong><p>Идея, правила и первая версия на «Электронике-60».</p></div><div><strong>Вадим Герасимов</strong><p>Перенос на IBM PC и работа над ранними версиями.</p></div><div><strong>Дмитрий Павловский</strong><p>Участник ранней команды и совместных игровых проектов.</p></div></div>
+        <p class="source-note reveal">Роли участников различались: оригинальную игру создал Пажитнов. Герасимов описывает совместную разработку в 1984–1986 годах; официальная история ведёт отсчёт с 6 июня 1984 года. <a href="https://vadim.oversigma.com/Tetris.htm" target="_blank" rel="noopener noreferrer">Воспоминания Герасимова ↗</a></p>
+      </div>
+    </section>
+
+    <section class="chapter" id="expansion" aria-labelledby="expansion-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot cyan"></i> 02 / БЕЗ ГРАНИЦ</span><span class="era">1985–1988</span></div>
+      <div class="section-heading reveal"><h2 id="expansion-title">Хорошая идея<br><span class="muted">не знает границ.</span></h2><p>С дискеты на дискету. Из Москвы в Будапешт. Перенос на IBM PC помогает Tetris выйти за пределы лаборатории: венгерские программисты создают версии для других компьютеров, а игру замечают западные издатели.</p></div>
+      <div class="route reveal" aria-label="Путь игры: Москва, Будапешт, весь мир"><div><span class="route-point purple"></span><strong>Москва</strong><span>Идея</span></div><span class="route-line"></span><div><span class="route-point cyan"></span><strong>Будапешт</strong><span>Первые порты</span></div><span class="route-line"></span><div><span class="route-point orange"></span><strong>Весь мир</strong><span>Новая аудитория</span></div></div>
+      <div class="two-cards"><article class="story-card reveal"><span class="mini-label">1987–1988</span><h3>Первый большой выход.</h3><p>Роберт Стейн и его Andromeda Software становятся связующим звеном с Западом. Mirrorsoft и Spectrum HoloByte выпускают компьютерные версии. Но цепочка договорённостей о правах оказывается сложнее самой игры.</p><a class="text-link" href="https://time.com/6266810/tetris-movie-apple-tv-true-story/" target="_blank" rel="noopener noreferrer">История первых лицензий ↗</a></article><article class="story-card reveal"><span class="mini-label">1988</span><h3>Случайная встреча.</h3><p>На выставке в Лас-Вегасе издатель Хенк Роджерс открывает для себя Tetris. Он возвращается к стенду снова и снова. Вскоре его компания Bullet-Proof Software выпускает игру в Японии.</p><blockquote>«Я понял, что игра меня зацепила».<cite>Хенк Роджерс · перевод фрагмента <a href="https://time.com/2837390/tetris-at-30-pajitnov-interview/" target="_blank" rel="noopener noreferrer">интервью Time</a></cite></blockquote></article></div>
+    </div></section>
+
+    <section class="chapter gray" id="gameboy" aria-labelledby="gameboy-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot green"></i> 03 / ИГРА В ТВОИХ РУКАХ</span><span class="era">1989</span></div>
+      <div class="split reverse"><figure class="exhibit gameboy-exhibit reveal"><img src="assets/gameboy.svg" alt="Авторская иллюстрация серого Nintendo Game Boy с зелёным экраном и фигурами Tetris" width="640" height="590" loading="lazy"><figcaption><span>NINTENDO GAME BOY</span> 02 / Иллюстрация консоли</figcaption></figure><div class="chapter-copy reveal"><h2 id="gameboy-title">Целый мир.<br><span class="muted">В кармане.</span></h2><p>Хенк Роджерс отправляется в Москву и получает права на портативную версию, которые затем лицензирует Nintendo. Tetris становится игрой в комплекте с Game Boy на западных рынках — и идеальным спутником в дороге.</p><div class="stat"><strong aria-label="Более 35 миллионов"><span data-count="35">35</span><span class="stat-unit">M</span><span class="stat-plus">+</span></strong><span>проданных копий на Game Boy</span></div><p class="source-note">Данные <a href="https://tetris.com/corporate-bios" target="_blank" rel="noopener noreferrer">The Tetris Company ↗</a></p></div></div>
+    </div></section>
+
+    <section class="chapter" id="rights" aria-labelledby="rights-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot red"></i> 04 / БИТВА ЗА ПРАВА</span><span class="era">1989–1990-е</span></div>
+      <div class="section-heading reveal"><h2 id="rights-title">Простые правила.<br><span class="muted">Сложные договоры.</span></h2><p>Компьютеры, аркады, домашние и портативные консоли: права на каждую платформу могли принадлежать разным компаниям. Советская организация «Электроноргтехника» — ELORG — стала центром переговоров.</p></div>
+      <div class="license-grid reveal"><article class="license-card"><span class="mini-label">1989 / КОНФЛИКТ</span><h3>Atari Games / Tengen<br><span class="muted">против Nintendo</span></h3><p>21 июня 1989 года суд запрещает дальнейшее распространение версии Tengen для NES до разрешения спора. Ключевой вопрос — распространялась ли лицензия на компьютеры на игровые консоли?</p><a class="text-link" href="https://atariemailarchive.org/thread/lawsuits-with-nintendo-810" target="_blank" rel="noopener noreferrer">Архив пресс-релизов Atari ↗</a></article><article class="license-card"><span class="mini-label">1996 / НОВАЯ ГЛАВА</span><h3>The Tetris Company</h3><p>Пажитнов и Роджерс объединяют усилия. Создание The Tetris Company открывает новую эпоху управления брендом и лицензиями. У игры появляется единый курс развития.</p><a class="text-link" href="https://tetris.com/corporate-bios" target="_blank" rel="noopener noreferrer">История партнёрства ↗</a><span class="license-symbol" aria-hidden="true">©</span></article></div>
+    </div></section>
+
+    <section class="chapter gray" id="digital" aria-labelledby="digital-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot blue"></i> 05 / ЦИФРОВАЯ ЭРА</span><span class="era">2000-е</span></div>
+      <div class="split"><div class="chapter-copy reveal"><h2 id="digital-title">Новые экраны.<br><span class="muted">Тот же восторг.</span></h2><p>Сначала кнопочные телефоны, потом сенсорные экраны. Tetris легко находит место между звонками и сообщениями: короткая партия всегда под рукой.</p><p>В 2008 году выходит версия EA для iPhone и iPod touch. В 2009-м Tetris Online запускает Tetris Friends — встречаться за игровым полем теперь можно в браузере.</p><a class="text-link" href="https://tetris.com/news/the-history-of-tetris" target="_blank" rel="noopener noreferrer">Цифровая хронология ↗</a></div><div class="digital-art reveal" role="img" aria-label="Стилизованный смартфон с разноцветными фигурами на экране"><div class="phone"><div class="phone-speaker"></div><div class="phone-heading">Ещё одну?<span>Время для небольшой паузы.</span></div><div class="phone-board" data-board="phone" aria-hidden="true"></div><div class="phone-home"></div></div><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span></div></div>
+    </div></section>
+
+    <section class="chapter" id="esports" aria-labelledby="esports-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot orange"></i> 06 / ИСКУССТВО СКОРОСТИ</span><span class="era">2010-е</span></div>
+      <div class="section-heading reveal"><h2 id="esports-title">Больше, чем игра.<br><span class="muted">Спорт на пределе.</span></h2><p>В 2010 году проходит первый Classic Tetris World Championship. Обычная NES становится спортивной ареной. На кону — точность, выдержка и решение, принятое за долю секунды.</p></div>
+      <div class="champion-card reveal"><div><span class="mini-label">JONAS NEUBAUER · 1981–2021</span><h3>Йонас Нойбауэр.<br>Имя, ставшее легендой.</h3><p>Победитель первого CTWC и семикратный чемпион мира. Его мастерство и щедрость к сообществу помогли вырастить новое поколение игроков. Сегодня чемпионский трофей носит его имя.</p><a class="text-link" href="https://thectwc.com/champions/jonas-neubauer/" target="_blank" rel="noopener noreferrer">Зал славы CTWC ↗</a></div><div class="champion-number"><strong>7</strong><span>титулов чемпиона мира</span><span class="champion-years">2010 · 2011 · 2012 · 2013<br>2015 · 2016 · 2017</span></div></div>
+      <aside class="callout reveal"><span class="record-icon" aria-hidden="true">↗</span><div><h3>Пределы продолжают двигаться.</h3><p>В декабре 2023 года Уиллис «Blue Scuti» Гибсон первым среди людей довёл NES Tetris до сбоя на 157-м уровне. Это технический предел программы, а не предусмотренный финал. <a href="https://www.guinnessworldrecords.com/world-records/764734-first-player-to-reach-the-killscreen-in-tetris-nes" target="_blank" rel="noopener noreferrer">Guinness World Records ↗</a></p></div></aside>
+    </div></section>
+
+    <section class="chapter gray today" id="today" aria-labelledby="today-title"><div class="wrap">
+      <div class="chapter-top reveal"><span class="eyebrow"><i class="dot purple"></i> 07 / ИСТОРИЯ ПРОДОЛЖАЕТСЯ</span><span class="era">Сейчас</span></div>
+      <div class="section-heading reveal"><h2 id="today-title">Меняется всё.<br><span class="muted">Остаётся Tetris.</span></h2><p>В Tetris Effect, вышедшей в 2018 году, каждый поворот фигуры становится частью музыки, света и движения. Знакомая головоломка превращается в погружение. Connected добавляет к нему совместную игру.</p></div>
+      <div class="effect-panel reveal"><div class="effect-copy"><span class="mini-label">TETRIS EFFECT: CONNECTED</span><h3>Почувствовать<br>каждое движение.</h3><a class="light-link" href="https://www.tetriseffect.game/" target="_blank" rel="noopener noreferrer">Открыть мир Tetris Effect ↗</a></div><div class="effect-art" aria-hidden="true"><div class="effect-board" data-board="effect"></div></div><span class="effect-caption">Художественная визуализация</span></div>
+      <div class="today-stats reveal"><div class="stat"><strong aria-label="Более 500 миллионов"><span data-count="500">500</span><span class="stat-unit">M</span><span class="stat-plus">+</span></strong><span>проданных копий во всём мире</span></div><div><h3>Семь фигур. Общий язык.</h3><p>От экранов до искусства, дизайна и кино — Tetris стал частью визуальной культуры. Его легко узнать. Ещё легче захотеть сыграть снова.</p><p class="source-note">По данным правообладателя на июнь 2026 года — более 520 млн проданных копий. Продажи не равны числу уникальных игроков. <a href="https://play.tetris.com/news/the-tetris-company-celebrates-world-tetris-day" target="_blank" rel="noopener noreferrer">Источник ↗</a></p></div></div>
+    </div></section>
+
+    <section class="chapter timeline-section" id="timeline" aria-labelledby="timeline-title"><div class="wrap">
+      <span class="eyebrow reveal">ИСТОРИЯ В СЕМИ МОМЕНТАХ</span><div class="timeline-heading reveal"><h2 id="timeline-title">Каждая дата —<br><span class="muted">новый уровень.</span></h2><p>Выберите год.<br>Вернитесь в момент, который всё изменил.</p></div>
+      <div class="timeline-controls" role="tablist" aria-label="Ключевые даты истории Tetris"><button role="tab" id="tab-1984" aria-selected="true" aria-controls="timeline-panel" tabindex="0" data-year="1984">1984</button><button role="tab" id="tab-1988" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="1988">1988</button><button role="tab" id="tab-1989" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="1989">1989</button><button role="tab" id="tab-1996" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="1996">1996</button><button role="tab" id="tab-2009" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="2009">2009</button><button role="tab" id="tab-2010" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="2010">2010</button><button role="tab" id="tab-2018" aria-selected="false" aria-controls="timeline-panel" tabindex="-1" data-year="2018">2018</button></div>
+      <div class="timeline-panel" id="timeline-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-1984"><div class="timeline-year" id="timeline-year" aria-hidden="true">1984</div><div><span class="mini-label" id="timeline-label">МОСКВА · СССР</span><h3 id="timeline-event">Первая фигура упала.</h3><p id="timeline-description">Алексей Пажитнов создаёт Tetris на «Электронике-60». Официальная дата рождения игры — 6 июня 1984 года.</p><a class="text-link" id="timeline-link" href="#birth">К этой главе <span aria-hidden="true">↗</span></a></div></div>
+      <noscript><p>Для переключения дат включите JavaScript. Все события уже описаны в главах выше.</p></noscript>
+      <div class="closing reveal"><img src="assets/favicon.svg" alt="" width="32" height="32"><p>Линии исчезают.<br><span class="muted">История остаётся.</span></p><a class="text-link" href="#hero">Вернуться к началу ↑</a></div>
+    </div></section>
+  </main>
+  <footer class="footer gray"><div class="wrap"><div class="footer-top"><a class="brand" href="#hero">Tetris<span class="brand-light"> / история</span></a><div><a href="https://tetris.com/" target="_blank" rel="noopener noreferrer">Официальный Tetris ↗</a><a href="#sources">Источники</a><button id="motion-toggle" type="button" aria-pressed="false" hidden>Приостановить анимацию</button></div></div><details id="sources"><summary>Источники и примечания</summary><ol><li><a href="https://tetris.com/news/the-history-of-tetris" target="_blank" rel="noopener noreferrer">The Tetris Company — официальная хронология</a>: даты, мобильные версии и Tetris Friends.</li><li><a href="https://vadim.oversigma.com/Tetris.htm" target="_blank" rel="noopener noreferrer">Вадим Герасимов — Original Tetris: Story and Download</a>: ранняя команда и версия для IBM PC.</li><li><a href="https://time.com/2837390/tetris-at-30-pajitnov-interview/" target="_blank" rel="noopener noreferrer">Time — интервью Пажитнова и Роджерса, 2014</a>: создание игры и цитата в переводе.</li><li><a href="https://time.com/6266810/tetris-movie-apple-tv-true-story/" target="_blank" rel="noopener noreferrer">Time — история лицензирования, 2023</a>: Роберт Стейн и западные издатели.</li><li><a href="https://tetris.com/corporate-bios" target="_blank" rel="noopener noreferrer">The Tetris Company — биографии</a>: Хенк Роджерс, Game Boy и 35 млн копий.</li><li><a href="https://atariemailarchive.org/thread/lawsuits-with-nintendo-810" target="_blank" rel="noopener noreferrer">Atari Email Archive — пресс-релиз от 21 июня 1989 года</a>: запрет распространения Tengen Tetris.</li><li><a href="https://thectwc.com/champions/jonas-neubauer/" target="_blank" rel="noopener noreferrer">CTWC — Йонас Нойбауэр</a>: семь титулов.</li><li><a href="https://www.guinnessworldrecords.com/world-records/764734-first-player-to-reach-the-killscreen-in-tetris-nes" target="_blank" rel="noopener noreferrer">Guinness World Records — рекорд Blue Scuti</a>: уровень 157, декабрь 2023.</li><li><a href="https://www.tetriseffect.game/2019/11/18/tetris-effect-1st-anniv/" target="_blank" rel="noopener noreferrer">Enhance — годовщина Tetris Effect</a>: релиз в ноябре 2018 года.</li><li><a href="https://play.tetris.com/news/the-tetris-company-celebrates-world-tetris-day" target="_blank" rel="noopener noreferrer">The Tetris Company — Всемирный день Tetris, 2026</a>: более 520 млн проданных копий.</li></ol><p>Проверено 12 октября 2026 года. Иллюстрации созданы для этого сайта и не являются архивными фотографиями.</p></details><div class="footer-bottom"><p>© 2026 История Tetris. Независимый образовательный проект.</p><p>Tetris — товарный знак Tetris Holding. Проект не связан с Apple, Nintendo или The Tetris Company.</p></div></div></footer>
+</body>
+</html>
+
